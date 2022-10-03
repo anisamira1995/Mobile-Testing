@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220727 09:10:09.451" rpa="false" schemaversion="3">
+<suite id="s1" name="Simple" source="E:\Github\pakwan-oranghrm-personal\mobile_pycharm\simple.robot">
+<test id="s1-t1" name="open_calendar" line="14">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${host}</arg>
+<arg>platformName=${platAndroid}</arg>
+<arg>deviceName=602c342e</arg>
+<arg>appPackage=pl.mb.calendar</arg>
+<arg>appActivity=pl.mb.calendar.FullActivity</arg>
+<arg>automationNamae=Uiautomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<msg timestamp="20220727 09:10:09.567" level="TRACE">Arguments: [ 'http://localhost:4723/wd/hub' | platformName='Android' | deviceName='602c342e' | appPackage='pl.mb.calendar' | appActivity='pl.mb.calendar.FullActivity' | automationNamae='Uiautomator2' ]</msg>
+<msg timestamp="20220727 09:10:11.602" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{"platformName": "Android", "appium:deviceName": "602c342e", "appium:appPackage": "pl.mb.calendar", "appium:appActivity": "pl.mb.calendar.FullActivity", "appium:automationNamae": "Uiautomator2"}]}, "desiredCapabilities": {"platformName": "Android", "deviceName": "602c342e", "appPackage": "pl.mb.calendar", "appActivity": "pl.mb.calendar.FullActivity", "automationNamae": "Uiautomator2"}}</msg>
+<msg timestamp="20220727 09:10:11.617" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:4723</msg>
+<msg timestamp="20220727 09:10:20.304" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 885</msg>
+<msg timestamp="20220727 09:10:20.304" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220727 09:10:20.305" level="DEBUG">Opened application with session id 1899921c-f72d-440c-9677-df3842aa696a</msg>
+<msg timestamp="20220727 09:10:20.305" level="TRACE">Return: 1</msg>
+<status status="PASS" starttime="20220727 09:10:09.567" endtime="20220727 09:10:20.305"/>
+</kw>
+<tag>calendar</tag>
+<status status="PASS" starttime="20220727 09:10:09.567" endtime="20220727 09:10:20.305"/>
+</test>
+<status status="PASS" starttime="20220727 09:10:09.451" endtime="20220727 09:10:20.306"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">calendar</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Simple">Simple</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

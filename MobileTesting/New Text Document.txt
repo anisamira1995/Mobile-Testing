@@ -1,0 +1,21 @@
+permisison on colornote:
+id= com.android.permissioncontroller:id/permission_allow_button
+class= android.widget.Button
+package=com.google.android.permissioncontroller
+
+
+#com.android.permissioncontroller:id/permission_allow_button
+
+adb kill-server
+adb start-server
+adb reconnect
+
+gpu: 1975
+i5: 745
+motheboard: 600
+toshiba: 165
+ram: 310
+ssd: 210
+psu: 180
+case: 200
+aio: 320

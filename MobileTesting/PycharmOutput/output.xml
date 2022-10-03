@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220802 09:23:59.845" rpa="false" schemaversion="3">
+<suite id="s1" name="Calendar Test" source="E:\Github\pakwan-oranghrm-personal\mobile_pycharm\calendar_test.robot">
+<test id="s1-t1" name="open_app" line="13">
+<kw name="open_calendaer">
+<msg timestamp="20220802 09:23:59.974" level="TRACE">Arguments: [  ]</msg>
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${host}</arg>
+<arg>platformName=${platAndroid}</arg>
+<arg>deviceName=${redmi9}</arg>
+<arg>appPackage=pl.mb.calendar</arg>
+<arg>appActivity=pl.mb.calendar.FullActivity</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<msg timestamp="20220802 09:23:59.974" level="TRACE">Arguments: [ 'http://localhost:4723/wd/hub' | platformName='Android' | deviceName='602c342e' | appPackage='pl.mb.calendar' | appActivity='pl.mb.calendar.FullActivity' ]</msg>
+<msg timestamp="20220802 09:24:02.002" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{"platformName": "Android", "appium:deviceName": "602c342e", "appium:appPackage": "pl.mb.calendar", "appium:appActivity": "pl.mb.calendar.FullActivity"}]}, "desiredCapabilities": {"platformName": "Android", "deviceName": "602c342e", "appPackage": "pl.mb.calendar", "appActivity": "pl.mb.calendar.FullActivity"}}</msg>
+<msg timestamp="20220802 09:24:02.008" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:4723</msg>
+<msg timestamp="20220802 09:24:12.375" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 819</msg>
+<msg timestamp="20220802 09:24:12.375" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220802 09:24:12.376" level="DEBUG">Opened application with session id ff52e337-a889-4ae1-8fd6-ffb3a989b1ec</msg>
+<msg timestamp="20220802 09:24:12.376" level="TRACE">Return: 1</msg>
+<status status="PASS" starttime="20220802 09:23:59.974" endtime="20220802 09:24:12.376"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=pl.mb.calendar:id/action_bar_root</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20220802 09:24:12.377" level="TRACE">Arguments: [ 'id=pl.mb.calendar:id/action_bar_root' ]</msg>
+<msg timestamp="20220802 09:24:12.377" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/ff52e337-a889-4ae1-8fd6-ffb3a989b1ec/elements {"using": "id", "value": "pl.mb.calendar:id/action_bar_root"}</msg>
+<msg timestamp="20220802 09:24:13.113" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/ff52e337-a889-4ae1-8fd6-ffb3a989b1ec/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220802 09:24:13.113" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220802 09:24:13.113" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220802 09:24:12.377" endtime="20220802 09:24:13.113"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220802 09:24:13.113" level="TRACE">Arguments: [ '5' ]</msg>
+<msg timestamp="20220802 09:24:18.125" level="INFO">Slept 5 seconds</msg>
+<msg timestamp="20220802 09:24:18.125" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220802 09:24:13.113" endtime="20220802 09:24:18.125"/>
+</kw>
+<msg timestamp="20220802 09:24:18.125" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220802 09:23:59.973" endtime="20220802 09:24:18.125"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=pl.mb.calendar:id/mNewEvent</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220802 09:24:18.125" level="TRACE">Arguments: [ 'id=pl.mb.calendar:id/mNewEvent' ]</msg>
+<msg timestamp="20220802 09:24:18.126" level="INFO">Clicking element 'id=pl.mb.calendar:id/mNewEvent'.</msg>
+<msg timestamp="20220802 09:24:18.126" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/ff52e337-a889-4ae1-8fd6-ffb3a989b1ec/elements {"using": "id", "value": "pl.mb.calendar:id/mNewEvent"}</msg>
+<msg timestamp="20220802 09:24:18.710" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/ff52e337-a889-4ae1-8fd6-ffb3a989b1ec/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220802 09:24:18.711" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220802 09:24:18.711" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/ff52e337-a889-4ae1-8fd6-ffb3a989b1ec/element/00000000-0000-00f9-ffff-ffff00000033/click {"id": "00000000-0000-00f9-ffff-ffff00000033"}</msg>
+<msg timestamp="20220802 09:24:18.797" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/ff52e337-a889-4ae1-8fd6-ffb3a989b1ec/element/00000000-0000-00f9-ffff-ffff00000033/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220802 09:24:18.797" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220802 09:24:18.797" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220802 09:24:18.125" endtime="20220802 09:24:18.798"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=pl.mb.calendar:id/action_bar_root</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20220802 09:24:18.798" level="TRACE">Arguments: [ 'id=pl.mb.calendar:id/action_bar_root' ]</msg>
+<msg timestamp="20220802 09:24:18.798" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/ff52e337-a889-4ae1-8fd6-ffb3a989b1ec/elements {"using": "id", "value": "pl.mb.calendar:id/action_bar_root"}</msg>
+<msg timestamp="20220802 09:24:18.985" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/ff52e337-a889-4ae1-8fd6-ffb3a989b1ec/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220802 09:24:18.986" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220802 09:24:18.986" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220802 09:24:18.798" endtime="20220802 09:24:18.986"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>id=pl.mb.calendar:id/editText2</arg>
+<arg>entahlah nak</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220802 09:24:18.986" level="TRACE">Arguments: [ 'id=pl.mb.calendar:id/editText2' | 'entahlah nak' ]</msg>
+<msg timestamp="20220802 09:24:18.987" level="INFO">Typing text 'entahlah nak' into text field 'id=pl.mb.calendar:id/editText2'</msg>
+<msg timestamp="20220802 09:24:18.987" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/ff52e337-a889-4ae1-8fd6-ffb3a989b1ec/elements {"using": "id", "value": "pl.mb.calendar:id/editText2"}</msg>
+<msg timestamp="20220802 09:24:19.640" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/ff52e337-a889-4ae1-8fd6-ffb3a989b1ec/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220802 09:24:19.640" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220802 09:24:19.640" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/ff52e337-a889-4ae1-8fd6-ffb3a989b1ec/element/00000000-0000-00fb-ffff-ffff00000136/value {"text": "entahlah nak", "value": ["e", "n", "t", "a", "h", "l", "a", "h", " ", "n", "a", "k"], "id": "00000000-0000-00fb-ffff-ffff00000136"}</msg>
+<msg timestamp="20220802 09:24:19.728" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/ff52e337-a889-4ae1-8fd6-ffb3a989b1ec/element/00000000-0000-00fb-ffff-ffff00000136/value HTTP/1.1" 200 14</msg>
+<msg timestamp="20220802 09:24:19.729" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220802 09:24:19.729" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220802 09:24:18.986" endtime="20220802 09:24:19.729"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=pl.mb.calendar:id/mAdd</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220802 09:24:19.729" level="TRACE">Arguments: [ 'id=pl.mb.calendar:id/mAdd' ]</msg>
+<msg timestamp="20220802 09:24:19.730" level="INFO">Clicking element 'id=pl.mb.calendar:id/mAdd'.</msg>
+<msg timestamp="20220802 09:24:19.730" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/ff52e337-a889-4ae1-8fd6-ffb3a989b1ec/elements {"using": "id", "value": "pl.mb.calendar:id/mAdd"}</msg>
+<msg timestamp="20220802 09:24:20.280" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/ff52e337-a889-4ae1-8fd6-ffb3a989b1ec/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220802 09:24:20.281" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220802 09:24:20.281" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/ff52e337-a889-4ae1-8fd6-ffb3a989b1ec/element/00000000-0000-00fb-ffff-ffff00000140/click {"id": "00000000-0000-00fb-ffff-ffff00000140"}</msg>
+<msg timestamp="20220802 09:24:20.374" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/ff52e337-a889-4ae1-8fd6-ffb3a989b1ec/element/00000000-0000-00fb-ffff-ffff00000140/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220802 09:24:20.374" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220802 09:24:20.374" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220802 09:24:19.729" endtime="20220802 09:24:20.374"/>
+</kw>
+<tag>calendar</tag>
+<status status="PASS" starttime="20220802 09:23:59.973" endtime="20220802 09:24:20.374"/>
+</test>
+<status status="PASS" starttime="20220802 09:23:59.846" endtime="20220802 09:24:20.375"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">calendar</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Calendar Test">Calendar Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
